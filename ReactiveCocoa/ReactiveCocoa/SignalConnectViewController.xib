@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalConnectViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eai-n5-35a">
+                    <rect key="frame" x="164" y="50" width="47" height="30"/>
+                    <state key="normal" title="concat"/>
+                    <connections>
+                        <action selector="concat:" destination="-1" eventType="touchUpInside" id="b8e-jg-exK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-s0-5Bb">
+                    <rect key="frame" x="172" y="130" width="31" height="30"/>
+                    <state key="normal" title="then"/>
+                    <connections>
+                        <action selector="then:" destination="-1" eventType="touchUpInside" id="Zrh-gl-vnR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-zE-gsd">
+                    <rect key="frame" x="166" y="210" width="44" height="30"/>
+                    <state key="normal" title="merge"/>
+                    <connections>
+                        <action selector="merge:" destination="-1" eventType="touchUpInside" id="h91-3e-WaE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDh-Nt-TW7">
+                    <rect key="frame" x="162" y="290" width="52" height="30"/>
+                    <state key="normal" title="zipWith"/>
+                    <connections>
+                        <action selector="zipWith:" destination="-1" eventType="touchUpInside" id="eoW-h3-Jxv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-Rh-wkh">
+                    <rect key="frame" x="137" y="370" width="102" height="30"/>
+                    <state key="normal" title="combineLatest"/>
+                    <connections>
+                        <action selector="combineLatest:" destination="-1" eventType="touchUpInside" id="E9p-Y7-W4D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-ZH-3Gt">
+                    <rect key="frame" x="163.5" y="450" width="48" height="30"/>
+                    <state key="normal" title="reduce"/>
+                    <connections>
+                        <action selector="reduce:" destination="-1" eventType="touchUpInside" id="4nW-jh-4b0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XtC-zE-gsd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="15C-IN-I0o"/>
+                <constraint firstItem="eai-n5-35a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="1TP-l5-vDk"/>
+                <constraint firstItem="bNi-Rh-wkh" firstAttribute="top" secondItem="oDh-Nt-TW7" secondAttribute="bottom" constant="50" id="MA3-la-C2A"/>
+                <constraint firstItem="ecn-ZH-3Gt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PFc-FQ-7AN"/>
+                <constraint firstItem="UsI-s0-5Bb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xge-ES-clu"/>
+                <constraint firstItem="oDh-Nt-TW7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ybw-QF-gT7"/>
+                <constraint firstItem="XtC-zE-gsd" firstAttribute="top" secondItem="UsI-s0-5Bb" secondAttribute="bottom" constant="50" id="bLo-9w-eV2"/>
+                <constraint firstItem="UsI-s0-5Bb" firstAttribute="top" secondItem="eai-n5-35a" secondAttribute="bottom" constant="50" id="gLX-aj-rzt"/>
+                <constraint firstItem="oDh-Nt-TW7" firstAttribute="top" secondItem="XtC-zE-gsd" secondAttribute="bottom" constant="50" id="qo3-WE-eSH"/>
+                <constraint firstItem="eai-n5-35a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qxx-ZK-3UC"/>
+                <constraint firstItem="ecn-ZH-3Gt" firstAttribute="top" secondItem="bNi-Rh-wkh" secondAttribute="bottom" constant="50" id="ylt-eS-bFN"/>
+                <constraint firstItem="bNi-Rh-wkh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zj5-cn-sqq"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

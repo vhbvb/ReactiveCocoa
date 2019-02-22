@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneViewController">
+            <connections>
+                <outlet property="name" destination="pVf-yP-sTp" id="VTl-i1-XHT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKB-1f-PeC">
+                    <rect key="frame" x="158" y="200" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFp-dP-zNd">
+                    <rect key="frame" x="133.5" y="318.5" width="108" height="30"/>
+                    <state key="normal" title="跳到第二控制器"/>
+                    <connections>
+                        <action selector="jump:" destination="-1" eventType="touchUpInside" id="nCn-zB-EZn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVf-yP-sTp">
+                    <rect key="frame" x="167" y="448.5" width="41" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zKB-1f-PeC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="4IT-gN-rKN"/>
+                <constraint firstItem="pVf-yP-sTp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Y2-ya-QT1"/>
+                <constraint firstItem="zKB-1f-PeC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JQM-1m-Aiq"/>
+                <constraint firstItem="pVf-yP-sTp" firstAttribute="top" secondItem="zFp-dP-zNd" secondAttribute="bottom" constant="100" id="ZuC-wr-LJr"/>
+                <constraint firstItem="zFp-dP-zNd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b3W-Pm-Uzr"/>
+                <constraint firstItem="zFp-dP-zNd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tgL-r1-keP"/>
+            </constraints>
+            <point key="canvasLocation" x="-958.5" y="29.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,7 @@
+platform :ios ,'8.0'
+use_frameworks!
+target 'RACMVVMDemo' do
+    
+pod 'ReactiveObjC', '~> 2.1.2'
+pod 'MobAPI-For-iOS', '~> 1.0.7'
+end
